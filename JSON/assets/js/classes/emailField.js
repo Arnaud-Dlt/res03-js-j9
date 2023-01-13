@@ -1,9 +1,9 @@
 import {Field} from './field.js';
 
-class emailField extends Field {
+class EmailField extends Field {
     
     constructor (element){
-        super(element)
+        super(element);
     }
     
     validate (){
@@ -11,4 +11,4 @@ class emailField extends Field {
     }
 }
 
-export {emailField};
+export {EmailField};

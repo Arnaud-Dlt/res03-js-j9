@@ -1,13 +1,13 @@
 import {Field} from './field.js';
 
-class passwordField extends Field {
+class PasswordField extends Field {
     
     constructor (element){
-        super(element)
+        super(element);
     }
     
     validate (){
         
     }
 }
-export {passwordField}
+export {PasswordField}

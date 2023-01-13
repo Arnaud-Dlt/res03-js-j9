@@ -1,6 +1,6 @@
 import {Field} from './field.js';
 
-class textField extends Field {
+class TextField extends Field {
     
     constructor (element){
         super(element);
@@ -10,4 +10,4 @@ class textField extends Field {
         
     }
 }
-export {textField}
+export {TextField}

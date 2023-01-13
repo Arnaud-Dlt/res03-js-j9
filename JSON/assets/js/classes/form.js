@@ -18,15 +18,34 @@ class Form {
     }
     
     addField(field){
-        
+        this.#fields.push(field);
     }
     
     submit(){
         
     }
     
-    validate(){
-        
+    validate() {
+        for (let i = 0; i < fields.length; i++) {
+            if (textField === "") {
+                field[i].classList.toggle("nok");
+            }
+            else {
+                field[i].classList.toggle("ok");
+            }
+            if (emailField === "") {
+                field[i].classList.toggle("nok");
+            }
+            else {
+                field[i].classList.toggle("ok");
+            }
+            if (passwordField === "") {
+                field[i].classList.toggle("nok");
+            }
+            else {
+                field[i].classList.toggle("ok");
+            }
+        }
     }
     
     toJSON(){
@@ -34,4 +53,4 @@ class Form {
     }
 }
 
-export {Form}
+export {Form};
