@@ -1,10 +1,14 @@
+import {textField} from './textField.js';
+import {passwordField} from './passwordField.js';
+import {emailField} from './emailField.js';
+
 class Field {
     #element;
     #errors;
     #name;
     
     constructor(element){
-        this.#elements = elements;
+        this.#element = element;
         this.#errors = [];
     }
     

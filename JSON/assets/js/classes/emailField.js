@@ -11,4 +11,4 @@ class emailField extends Field {
     }
 }
 
-export {emailField}
+export {emailField};
