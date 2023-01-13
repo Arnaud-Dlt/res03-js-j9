@@ -26,26 +26,7 @@ class Form {
     }
     
     validate() {
-        for (let i = 0; i < fields.length; i++) {
-            if (textField === "") {
-                field[i].classList.toggle("nok");
-            }
-            else {
-                field[i].classList.toggle("ok");
-            }
-            if (emailField === "") {
-                field[i].classList.toggle("nok");
-            }
-            else {
-                field[i].classList.toggle("ok");
-            }
-            if (passwordField === "") {
-                field[i].classList.toggle("nok");
-            }
-            else {
-                field[i].classList.toggle("ok");
-            }
-        }
+        fields[i].validate();
     }
     
     toJSON(){

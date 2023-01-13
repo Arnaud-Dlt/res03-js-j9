@@ -39,13 +39,25 @@ window.addEventListener("DOMContentLoaded", function() {
     
     console.log(form);
     
-    let btn=document.querySelector("button");
+    let userInfo=document.getElementById("user-information");
     
-    btn.addEventListener("submit", function()
+    userInfo.addEventListener("submit", function()
     {
-        btn.preventDefault();
-        btn.submit();
+        userInfo.preventDefault();
+        form.submit();
     });
+    
+    /*Vous allez ajouter un EventListener sur l'évenement change de chacun des input. Il devra appeler la méthode validate() 
+    du Form.La méthode validate du Form va appeler toutes les méthodes validate() des fields.*/
+    
+    inputs.addEventListener("change", function()
+    {
+        
+    });
+    
+    /*Si tous les champs sont valides, le bouton ne doit plus avoir la classe CSS disabled et son attribut HTML disabled doit
+    être false.*/
+    
     
     
 })
